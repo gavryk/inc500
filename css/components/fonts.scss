@@ -1,0 +1,14 @@
+@mixin declare-font($font-family, $font-filename, $font-weight: normal, $font-style: normal) {
+  @font-face {
+    font-family: '#{$font-family}';
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: url('../fonts/#{$font-filename}.eot');
+    src: url('../fonts/#{$font-filename}.eot?#iefix') format('embedded-opentype'), url('../fonts/#{$font-filename}.woff') format('woff');
+  }
+}
+
+@include declare-font('heebo-black', 'heebo/heebo-black');
+@include declare-font('heebo-bold', 'heebo/heebo-bold');
+@include declare-font('heebo-extrabold', 'heebo/heebo-extrabold');
+@include declare-font('heebo', 'heebo/heebo-regular');

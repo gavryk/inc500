@@ -1,0 +1,135 @@
+
+/* VARIABLES*/
+// STATES COLORS
+$cali-col: #4cbc8f;
+$dc_metro: #3b84c5;
+$florida: #ee4066;
+$midwest: #df1f25;
+$texas: #ef5b31;
+
+/*  ---------------------  */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  @include box-sizing(border-box);
+  font-family: 'heebo', sans-serif;
+  color: #000;
+  font-size: 18px;
+}
+p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h1 {
+  font-family: 'heebo-black', sans-serif;
+  font-size: 64px;
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-family: 'heebo-black', sans-serif;
+  font-size: 54px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.row_1400 {
+  max-width: 96%;
+  margin: 0 auto;
+  width: 1400px;
+}
+
+.row_1050 {
+  max-width: 96%;
+  margin: 0 auto;
+  width: 1080px;
+}
+.row_1280 {
+  max-width: 96%;
+  margin: 0 auto;
+  width: 1280px;
+}
+
+a {
+  color: #000;
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+
+// MARKS COLOR -------------------
+.cali_mark, .cali_link {
+  color: $cali-col;
+  p {
+    color: $cali-col;
+  }
+  span {
+    &:after {
+      background-color: $cali-col;
+    }
+  }
+}
+.metro_mark, .dc_link {
+  color: $dc_metro;
+  p {
+    color: $dc_metro;
+  }
+  span {
+    &:after {
+      background-color: $dc_metro;
+    }
+  }
+}
+.florida_mark, .florida_link {
+  color: $florida;
+  p {
+    color: $florida;
+  }
+ span {
+   &:after {
+     background-color: $florida;
+   }
+ }
+}
+.midwest_mark, .midwest_link {
+  color: $midwest;
+  p {
+    color: $midwest;
+  }
+  span {
+    &:after {
+      background-color: $midwest;
+    }
+  }
+}
+.texas_mark, .texas_link {
+  color: $texas;
+  p {
+    color: $texas;
+  }
+  span {
+    &:after {
+      background-color: $texas;
+    }
+  }
+}
