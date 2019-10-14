@@ -459,10 +459,18 @@ header {
         color: #fff;
         background-color: #000;
         padding: 20px 85px;
-        font-size: 35px; }
+        font-size: 35px;
+        -webkit-transition: all 0.4s ease-out;
+        -khtml-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        -ms-transition: all 0.4s ease-out;
+        -o-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out; }
         #get_details .row_1280 .details_link a i {
           margin-left: 10px;
           color: #fff; }
+        #get_details .row_1280 .details_link a:hover {
+          opacity: .8; }
 
 /*                              IMPORTANT DATES                            */
 #important_date {
