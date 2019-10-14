@@ -23,7 +23,7 @@ header {
       font-size: 28px;
       text-transform: uppercase;
     }
-    a {
+    span {
       color: #fff;
       font-size: 26px;
       text-decoration: none;
@@ -78,13 +78,32 @@ header {
             font-size: 14px;
           }
           a {
+            position: relative;
             img {
+              margin-bottom: 70px;
               @include transition(all, .4s);
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              top: -40px;
+              left: 60px;
+              width: 60px;
+              height: 50px;
+              border-radius: 50%;
+              background-color: #666;
+              transform: rotateX(120deg) scaleX(1);
+              @include transition(all, .4s);
+              opacity: .3;
+              box-shadow: 0 0 15px 10px #666;
             }
             &:hover {
               img {
                 @include transform(translateY(10px));
                 @include transition(all, .4s);
+              }
+              &:after {
+                transform: rotateX(120deg) scaleX(1.3);
               }
             }
           }

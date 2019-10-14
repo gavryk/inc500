@@ -123,7 +123,7 @@ li {
   src: url("../fonts/heebo/heebo-regular.eot");
   src: url("../fonts/heebo/heebo-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/heebo/heebo-regular.woff") format("woff"); }
 @media (max-width: 992px) {
-  header .row_1400 .apply_region h4, header .row_1400 .apply_region a {
+  header .row_1400 .apply_region h4, header .row_1400 .apply_region span {
     font-size: 16px; }
 
   #banner .row_1400 .main_title {
@@ -227,6 +227,9 @@ li {
     -moz-flex-basis: 100%;
     -ms-flex-basis: 100%;
     flex-basis: 100%; } }
+@media (max-width: 380px) {
+  #banner .state_marks .marks div.row_1400 div.mark a:after {
+    left: 35px; } }
 /*                              HEADER                            */
 header {
   padding: 30px 0;
@@ -254,7 +257,7 @@ header {
       font-family: 'heebo-black', sans-serif;
       font-size: 28px;
       text-transform: uppercase; }
-    header .apply_region a {
+    header .apply_region span {
       color: #fff;
       font-size: 26px;
       text-decoration: none; }
@@ -315,24 +318,47 @@ header {
             width: 55%;
             color: #666;
             font-size: 14px; }
-          #banner .state_marks .marks .row_1400 .mark a img {
-            -webkit-transition: all 0.4s ease-out;
-            -khtml-transition: all 0.4s ease-out;
-            -moz-transition: all 0.4s ease-out;
-            -ms-transition: all 0.4s ease-out;
-            -o-transition: all 0.4s ease-out;
-            transition: all 0.4s ease-out; }
-          #banner .state_marks .marks .row_1400 .mark a:hover img {
-            -webkit-transform: translateY(10px);
-            -moz-transform: translateY(10px);
-            -ms-transform: translateY(10px);
-            transform: translateY(10px);
-            -webkit-transition: all 0.4s ease-out;
-            -khtml-transition: all 0.4s ease-out;
-            -moz-transition: all 0.4s ease-out;
-            -ms-transition: all 0.4s ease-out;
-            -o-transition: all 0.4s ease-out;
-            transition: all 0.4s ease-out; }
+          #banner .state_marks .marks .row_1400 .mark a {
+            position: relative; }
+            #banner .state_marks .marks .row_1400 .mark a img {
+              margin-bottom: 70px;
+              -webkit-transition: all 0.4s ease-out;
+              -khtml-transition: all 0.4s ease-out;
+              -moz-transition: all 0.4s ease-out;
+              -ms-transition: all 0.4s ease-out;
+              -o-transition: all 0.4s ease-out;
+              transition: all 0.4s ease-out; }
+            #banner .state_marks .marks .row_1400 .mark a:after {
+              content: '';
+              position: absolute;
+              top: -40px;
+              left: 60px;
+              width: 60px;
+              height: 50px;
+              border-radius: 50%;
+              background-color: #666;
+              transform: rotateX(120deg) scaleX(1);
+              -webkit-transition: all 0.4s ease-out;
+              -khtml-transition: all 0.4s ease-out;
+              -moz-transition: all 0.4s ease-out;
+              -ms-transition: all 0.4s ease-out;
+              -o-transition: all 0.4s ease-out;
+              transition: all 0.4s ease-out;
+              opacity: .3;
+              box-shadow: 0 0 15px 10px #666; }
+            #banner .state_marks .marks .row_1400 .mark a:hover img {
+              -webkit-transform: translateY(10px);
+              -moz-transform: translateY(10px);
+              -ms-transform: translateY(10px);
+              transform: translateY(10px);
+              -webkit-transition: all 0.4s ease-out;
+              -khtml-transition: all 0.4s ease-out;
+              -moz-transition: all 0.4s ease-out;
+              -ms-transition: all 0.4s ease-out;
+              -o-transition: all 0.4s ease-out;
+              transition: all 0.4s ease-out; }
+            #banner .state_marks .marks .row_1400 .mark a:hover:after {
+              transform: rotateX(120deg) scaleX(1.3); }
 
 /*                              RECOGNITION                            */
 #get_recognition {

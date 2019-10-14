@@ -2,7 +2,7 @@
   header {
     .row_1400 {
       .apply_region {
-        h4, a {
+        h4, span {
           font-size: 16px;
         }
       }
@@ -157,6 +157,23 @@
       div.apply_links {
         a {
           @include flex-basis(100%);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 380px) {
+  #banner {
+    .state_marks {
+      .marks {
+        div.row_1400 {
+          div.mark {
+            a {
+              &:after {
+                left: 35px;
+              }
+            }
+          }
         }
       }
     }
