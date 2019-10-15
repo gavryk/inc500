@@ -1,6 +1,6 @@
 @media (max-width: 992px) {
   header {
-    .row_1400 {
+    .row_1380 {
       .apply_region {
         h4, span {
           font-size: 16px;
@@ -9,7 +9,7 @@
     }
   }
   #banner {
-    .row_1400 {
+    .row_1380 {
       .main_title {
         max-width: 100%;
         h1 {
@@ -21,7 +21,7 @@
   #banner {
     .state_marks {
       .marks {
-        .row_1400 {
+        .row_1140 {
           div.mark {
             margin-bottom: 30px;
             @include flex-basis(30%);
@@ -38,7 +38,7 @@
     }
   }
   #get_recognition {
-    .row_1050 {
+    .row_1140 {
       .recognition_items {
         .item {
           @include flex-basis(40%);
@@ -100,7 +100,7 @@
     }
   }
   #apply_now {
-    .row_1280 {
+    .row_1380 {
       .apply_links {
         a {
           @include justify-content(flex-start);
@@ -119,16 +119,18 @@
   #banner {
     .state_marks {
       .marks {
-        div.row_1400 {
+        div.row_1140 {
+          @include justify-content(center);
           div.mark {
-            @include flex-basis(45%);
+            @include flex-basis(43%);
+            margin-right: 20px;
           }
         }
       }
     }
   }
   #get_recognition {
-    .row_1050 {
+    .row_1140 {
       .recognition_items {
         div.item {
           @include flex-basis(100%);
@@ -153,9 +155,13 @@
     }
   }
   #apply_now {
-    .row_1280 {
+    .row_1380 {
+      h2 {
+        font-size: 54px;
+      }
       div.apply_links {
         a {
+          font-size: 27px;
           @include flex-basis(100%);
         }
       }
@@ -166,7 +172,7 @@
   #banner {
     .state_marks {
       .marks {
-        div.row_1400 {
+        div.row_1140 {
           div.mark {
             a {
               &:after {

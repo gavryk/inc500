@@ -10,7 +10,7 @@
 header {
   padding: 30px 0;
   background-color: #000;
-  .row_1400 {
+  .row_1380 {
     @include flex-box();
     @include justify-content(space-between);
     @include align-items(center);
@@ -19,9 +19,11 @@ header {
     text-align: center;
     color: #fff;
     h4 {
-      font-family: 'heebo-black', sans-serif;
+      font-family: heebo, sans-serif;
+      font-weight: 900;
       font-size: 28px;
       text-transform: uppercase;
+      margin-bottom: 5px;
     }
     span {
       color: #fff;
@@ -38,35 +40,38 @@ header {
   padding-top: 90px;
   .main_title {
     text-align: center;
-    max-width: 53%;
+    max-width: 54%;
     margin: 0 auto;
     p {
-      margin-bottom: 30px;
+      margin-bottom: 28px;
       span {
-        font-family: 'heebo-bold', sans-serif;
+        font-family: heebo, sans-serif;
+        font-weight: 700;
       }
     }
   }
   .state_marks {
     text-align: center;
     h3 {
-      font-family: 'heebo-bold', sans-serif;
+      font-family: heebo, sans-serif;
+      font-weight: 700;
       font-size: 18px;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
     .marks {
       background: url('../img/map_bg.png') no-repeat center / cover;
       padding-bottom: 50px;
-      .row_1400 {
+      .row_1140 {
         @include flex-box();
-        @include justify-content(space-evenly);
+        @include justify-content(space-between);
         @include align-items(baseline);
         @include flex-wrap(wrap);
         .mark {
-          @include flex-basis(20%);
+          @include flex-basis(17%);
           position: relative;
           p {
-            font-family: 'heebo-black', sans-serif;
+            font-family: heebo, sans-serif;
+            font-weight: 700;
             font-size: 20px;
             text-transform: uppercase;
             margin-bottom: 20px;
@@ -123,19 +128,20 @@ header {
   .recognition_items {
     @include flex-box();
     @include flex-wrap(wrap);
-    @include justify-content(space-between);
+    @include justify-content(space-around);
     .item {
-      @include flex-basis(45%);
+      @include flex-basis(41%);
       margin-bottom: 55px;
       &:last-child {
         margin-bottom: 0;
       }
       h3 {
-        font-family: 'heebo-bold', sans-serif;
+        font-family: heebo, sans-serif;
+        font-weight: 700;
         font-size: 30px;
         color: #3d85c4;
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         position: relative;
         &:before {
           position: absolute;
@@ -144,7 +150,7 @@ header {
           font-size: 25px;
           border-radius: 50%;
           left: -35px;
-          top: 7px;
+          top: 0;
         }
       }
     }
@@ -169,7 +175,7 @@ header {
       h2 {
         text-align: left;
         line-height: 53px;
-        margin-bottom: 20px;
+        margin-bottom: 28px;
       }
     }
   }
@@ -192,8 +198,9 @@ header {
       h4 {
         color: #fff;
         font-size: 32px;
-        font-family: 'heebo-regular', sans-serif;
+        font-family: heebo, sans-serif;
         font-weight: 400;
+        line-height: 40px;
       }
     }
     .details_link {
@@ -201,10 +208,11 @@ header {
       a {
         @include inline-flex();
         @include align-items(center);
-        font-family: 'heebo-extrabold', sans-serif;
+        font-family: heebo, sans-serif;
+        font-weight: 800;
         color: #fff;
         background-color: #000;
-        padding: 20px 85px;
+        padding: 20px 88px;
         font-size: 35px;
         @include transition(all, .4s);
         i {
@@ -226,6 +234,9 @@ header {
 #important_date {
   background-color: #eff6fc;
   padding: 80px 0;
+  h2 {
+    margin-bottom: 43px;
+  }
   .dates {
     @include flex-box();
     @include justify-content(space-between);
@@ -233,16 +244,18 @@ header {
     .date {
       @include flex-basis(23%);
       h4 {
-        font-family: 'heebo-black', sans-serif;
+        font-family: heebo, sans-serif;
+        font-weight: 900;
         font-size: 28px;
-        margin-bottom: 7px;
       }
       span {
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         color: #3d85c4;
         font-size: 17px;
-        font-family: 'heebo-black', sans-serif;
+        line-height: 26px;
+        font-family: heebo, sans-serif;
+        font-weight: 900;
       }
     }
   }
@@ -256,6 +269,9 @@ header {
   padding: 90px 0;
   background-color: #000;
   color: #fff;
+  h2 {
+    font-size: 67px;
+  }
   .apply_links {
     @include flex-box();
     @include flex-wrap(wrap);
@@ -265,17 +281,19 @@ header {
       @include align-items(center);
       @include justify-content(center);
       @include flex-basis(33%);
-      font-family: 'heebo-black', sans-serif;
       font-size: 37px;
       position: relative;
       margin-bottom: 50px;
       span {
         margin-right: 10px;
         position: relative;
+        font-family: heebo, sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
         &:after {
           content: '';
           position: absolute;
-          bottom: 5px;
+          bottom: 0;
           left: 0;
           width: 100%;
           height: 2px;

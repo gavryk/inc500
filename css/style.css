@@ -2,17 +2,17 @@
 /*  ---------------------  */
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
   border: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'heebo', sans-serif;
+  font-family: heebo, sans-serif;
   color: #000;
   font-size: 18px; }
 
@@ -21,32 +21,39 @@ p {
   line-height: 25px; }
 
 h1 {
-  font-family: 'heebo-black', sans-serif;
+  font-family: heebo, sans-serif;
+  font-weight: 900;
   font-size: 64px;
   text-align: center;
   line-height: 60px;
   margin-bottom: 35px; }
 
 h2 {
-  font-family: 'heebo-black', sans-serif;
+  font-family: heebo, sans-serif;
+  font-weight: 900;
   font-size: 54px;
   margin-bottom: 80px;
   text-align: center; }
 
-.row_1400 {
+.row_1380 {
   max-width: 96%;
   margin: 0 auto;
-  width: 1400px; }
+  width: 1380px; }
 
-.row_1050 {
+.row_1020 {
   max-width: 96%;
   margin: 0 auto;
-  width: 1080px; }
+  width: 1020px; }
 
 .row_1280 {
   max-width: 96%;
   margin: 0 auto;
   width: 1280px; }
+
+.row_1140 {
+  max-width: 96%;
+  margin: 0 auto;
+  width: 1140px; }
 
 a {
   color: #000;
@@ -99,59 +106,59 @@ li {
     background-color: #ef5b31; }
 
 @font-face {
-  font-family: "heebo-black";
-  font-weight: normal;
+  font-family: "heebo";
+  font-weight: 900;
   font-style: normal;
   src: url("../fonts/heebo/heebo-black.eot");
   src: url("../fonts/heebo/heebo-black.eot?#iefix") format("embedded-opentype"), url("../fonts/heebo/heebo-black.woff") format("woff"); }
 @font-face {
-  font-family: "heebo-bold";
-  font-weight: normal;
+  font-family: "heebo";
+  font-weight: 700;
   font-style: normal;
   src: url("../fonts/heebo/heebo-bold.eot");
   src: url("../fonts/heebo/heebo-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/heebo/heebo-bold.woff") format("woff"); }
 @font-face {
-  font-family: "heebo-extrabold";
-  font-weight: normal;
+  font-family: "heebo";
+  font-weight: 800;
   font-style: normal;
   src: url("../fonts/heebo/heebo-extrabold.eot");
   src: url("../fonts/heebo/heebo-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/heebo/heebo-extrabold.woff") format("woff"); }
 @font-face {
   font-family: "heebo";
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   src: url("../fonts/heebo/heebo-regular.eot");
   src: url("../fonts/heebo/heebo-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/heebo/heebo-regular.woff") format("woff"); }
 @media (max-width: 992px) {
-  header .row_1400 .apply_region h4, header .row_1400 .apply_region span {
+  header .row_1380 .apply_region h4, header .row_1380 .apply_region span {
     font-size: 16px; }
 
-  #banner .row_1400 .main_title {
+  #banner .row_1380 .main_title {
     max-width: 100%; }
-    #banner .row_1400 .main_title h1 {
+    #banner .row_1380 .main_title h1 {
       font-size: 53px; }
 
-  #banner .state_marks .marks .row_1400 div.mark {
+  #banner .state_marks .marks .row_1140 div.mark {
     margin-bottom: 30px;
     -webkit-flex-basis: 30%;
     -moz-flex-basis: 30%;
     -ms-flex-basis: 30%;
     flex-basis: 30%; }
-    #banner .state_marks .marks .row_1400 div.mark p {
+    #banner .state_marks .marks .row_1140 div.mark p {
       font-size: 16px;
       margin-bottom: 0; }
-    #banner .state_marks .marks .row_1400 div.mark span {
+    #banner .state_marks .marks .row_1140 div.mark span {
       width: 100%; }
 
-  #get_recognition .row_1050 .recognition_items .item {
+  #get_recognition .row_1140 .recognition_items .item {
     -webkit-flex-basis: 40%;
     -moz-flex-basis: 40%;
     -ms-flex-basis: 40%;
     flex-basis: 40%;
     margin-left: 40px; }
-    #get_recognition .row_1050 .recognition_items .item h3 {
+    #get_recognition .row_1140 .recognition_items .item h3 {
       font-size: 22px; }
-      #get_recognition .row_1050 .recognition_items .item h3:before {
+      #get_recognition .row_1140 .recognition_items .item h3:before {
         top: 4px;
         font-size: 23px; }
 
@@ -186,7 +193,7 @@ li {
     #important_date .row_1280 .dates .date h4 {
       margin-bottom: 0; }
 
-  #apply_now .row_1280 .apply_links a {
+  #apply_now .row_1380 .apply_links a {
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
@@ -198,13 +205,20 @@ li {
     flex-basis: 45%;
     font-size: 30px; } }
 @media (max-width: 768px) {
-  #banner .state_marks .marks div.row_1400 div.mark {
-    -webkit-flex-basis: 45%;
-    -moz-flex-basis: 45%;
-    -ms-flex-basis: 45%;
-    flex-basis: 45%; }
+  #banner .state_marks .marks div.row_1140 {
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+    #banner .state_marks .marks div.row_1140 div.mark {
+      -webkit-flex-basis: 43%;
+      -moz-flex-basis: 43%;
+      -ms-flex-basis: 43%;
+      flex-basis: 43%;
+      margin-right: 20px; }
 
-  #get_recognition .row_1050 .recognition_items div.item {
+  #get_recognition .row_1140 .recognition_items div.item {
     -webkit-flex-basis: 100%;
     -moz-flex-basis: 100%;
     -ms-flex-basis: 100%;
@@ -222,19 +236,22 @@ li {
     -ms-flex-basis: 100%;
     flex-basis: 100%; }
 
-  #apply_now .row_1280 div.apply_links a {
+  #apply_now .row_1380 h2 {
+    font-size: 54px; }
+  #apply_now .row_1380 div.apply_links a {
+    font-size: 27px;
     -webkit-flex-basis: 100%;
     -moz-flex-basis: 100%;
     -ms-flex-basis: 100%;
     flex-basis: 100%; } }
 @media (max-width: 380px) {
-  #banner .state_marks .marks div.row_1400 div.mark a:after {
+  #banner .state_marks .marks div.row_1140 div.mark a:after {
     left: 35px; } }
 /*                              HEADER                            */
 header {
   padding: 30px 0;
   background-color: #000; }
-  header .row_1400 {
+  header .row_1380 {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -254,9 +271,11 @@ header {
     text-align: center;
     color: #fff; }
     header .apply_region h4 {
-      font-family: 'heebo-black', sans-serif;
+      font-family: heebo, sans-serif;
+      font-weight: 900;
       font-size: 28px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 5px; }
     header .apply_region span {
       color: #fff;
       font-size: 26px;
@@ -267,32 +286,34 @@ header {
   padding-top: 90px; }
   #banner .main_title {
     text-align: center;
-    max-width: 53%;
+    max-width: 54%;
     margin: 0 auto; }
     #banner .main_title p {
-      margin-bottom: 30px; }
+      margin-bottom: 28px; }
       #banner .main_title p span {
-        font-family: 'heebo-bold', sans-serif; }
+        font-family: heebo, sans-serif;
+        font-weight: 700; }
   #banner .state_marks {
     text-align: center; }
     #banner .state_marks h3 {
-      font-family: 'heebo-bold', sans-serif;
+      font-family: heebo, sans-serif;
+      font-weight: 700;
       font-size: 18px;
-      margin-bottom: 50px; }
+      margin-bottom: 60px; }
     #banner .state_marks .marks {
       background: url("../img/map_bg.png") no-repeat center/cover;
       padding-bottom: 50px; }
-      #banner .state_marks .marks .row_1400 {
+      #banner .state_marks .marks .row_1140 {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        -webkit-justify-content: space-evenly;
-        -moz-justify-content: space-evenly;
-        -ms-justify-content: space-evenly;
-        justify-content: space-evenly;
-        -ms-flex-pack: space-evenly;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: space-between;
         -webkit-align-items: baseline;
         -moz-align-items: baseline;
         -ms-align-items: baseline;
@@ -302,25 +323,26 @@ header {
         -moz-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-        #banner .state_marks .marks .row_1400 .mark {
-          -webkit-flex-basis: 20%;
-          -moz-flex-basis: 20%;
-          -ms-flex-basis: 20%;
-          flex-basis: 20%;
+        #banner .state_marks .marks .row_1140 .mark {
+          -webkit-flex-basis: 17%;
+          -moz-flex-basis: 17%;
+          -ms-flex-basis: 17%;
+          flex-basis: 17%;
           position: relative; }
-          #banner .state_marks .marks .row_1400 .mark p {
-            font-family: 'heebo-black', sans-serif;
+          #banner .state_marks .marks .row_1140 .mark p {
+            font-family: heebo, sans-serif;
+            font-weight: 700;
             font-size: 20px;
             text-transform: uppercase;
             margin-bottom: 20px; }
-          #banner .state_marks .marks .row_1400 .mark span {
+          #banner .state_marks .marks .row_1140 .mark span {
             display: inline-flex;
             width: 55%;
             color: #666;
             font-size: 14px; }
-          #banner .state_marks .marks .row_1400 .mark a {
+          #banner .state_marks .marks .row_1140 .mark a {
             position: relative; }
-            #banner .state_marks .marks .row_1400 .mark a img {
+            #banner .state_marks .marks .row_1140 .mark a img {
               margin-bottom: 70px;
               -webkit-transition: all 0.4s ease-out;
               -khtml-transition: all 0.4s ease-out;
@@ -328,7 +350,7 @@ header {
               -ms-transition: all 0.4s ease-out;
               -o-transition: all 0.4s ease-out;
               transition: all 0.4s ease-out; }
-            #banner .state_marks .marks .row_1400 .mark a:after {
+            #banner .state_marks .marks .row_1140 .mark a:after {
               content: '';
               position: absolute;
               top: -40px;
@@ -346,7 +368,7 @@ header {
               transition: all 0.4s ease-out;
               opacity: .3;
               box-shadow: 0 0 15px 10px #666; }
-            #banner .state_marks .marks .row_1400 .mark a:hover img {
+            #banner .state_marks .marks .row_1140 .mark a:hover img {
               -webkit-transform: translateY(10px);
               -moz-transform: translateY(10px);
               -ms-transform: translateY(10px);
@@ -357,7 +379,7 @@ header {
               -ms-transition: all 0.4s ease-out;
               -o-transition: all 0.4s ease-out;
               transition: all 0.4s ease-out; }
-            #banner .state_marks .marks .row_1400 .mark a:hover:after {
+            #banner .state_marks .marks .row_1140 .mark a:hover:after {
               transform: rotateX(120deg) scaleX(1.3); }
 
 /*                              RECOGNITION                            */
@@ -374,25 +396,26 @@ header {
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: space-between;
-    -ms-flex-pack: space-between; }
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-around; }
     #get_recognition .recognition_items .item {
-      -webkit-flex-basis: 45%;
-      -moz-flex-basis: 45%;
-      -ms-flex-basis: 45%;
-      flex-basis: 45%;
+      -webkit-flex-basis: 41%;
+      -moz-flex-basis: 41%;
+      -ms-flex-basis: 41%;
+      flex-basis: 41%;
       margin-bottom: 55px; }
       #get_recognition .recognition_items .item:last-child {
         margin-bottom: 0; }
       #get_recognition .recognition_items .item h3 {
-        font-family: 'heebo-bold', sans-serif;
+        font-family: heebo, sans-serif;
+        font-weight: 700;
         font-size: 30px;
         color: #3d85c4;
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         position: relative; }
         #get_recognition .recognition_items .item h3:before {
           position: absolute;
@@ -401,7 +424,7 @@ header {
           font-size: 25px;
           border-radius: 50%;
           left: -35px;
-          top: 7px; }
+          top: 0; }
 
 /*                              EXCLUSIVE                            */
 #exclusive_benefits {
@@ -434,7 +457,7 @@ header {
     #exclusive_benefits .row_1280 .exclusive_text h2 {
       text-align: left;
       line-height: 53px;
-      margin-bottom: 20px; }
+      margin-bottom: 28px; }
 
 /*                              GET THE DETAILS                            */
 #get_details {
@@ -463,8 +486,9 @@ header {
       #get_details .row_1280 .details_title h4 {
         color: #fff;
         font-size: 32px;
-        font-family: 'heebo-regular', sans-serif;
-        font-weight: 400; }
+        font-family: heebo, sans-serif;
+        font-weight: 400;
+        line-height: 40px; }
     #get_details .row_1280 .details_link {
       -webkit-flex-basis: 40%;
       -moz-flex-basis: 40%;
@@ -481,10 +505,11 @@ header {
         -ms-align-items: center;
         -ms-flex-align: center;
         align-items: center;
-        font-family: 'heebo-extrabold', sans-serif;
+        font-family: heebo, sans-serif;
+        font-weight: 800;
         color: #fff;
         background-color: #000;
-        padding: 20px 85px;
+        padding: 20px 88px;
         font-size: 35px;
         -webkit-transition: all 0.4s ease-out;
         -khtml-transition: all 0.4s ease-out;
@@ -502,6 +527,8 @@ header {
 #important_date {
   background-color: #eff6fc;
   padding: 80px 0; }
+  #important_date h2 {
+    margin-bottom: 43px; }
   #important_date .dates {
     display: -webkit-box;
     display: -moz-box;
@@ -523,21 +550,25 @@ header {
       -ms-flex-basis: 23%;
       flex-basis: 23%; }
       #important_date .dates .date h4 {
-        font-family: 'heebo-black', sans-serif;
-        font-size: 28px;
-        margin-bottom: 7px; }
+        font-family: heebo, sans-serif;
+        font-weight: 900;
+        font-size: 28px; }
       #important_date .dates .date span {
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         color: #3d85c4;
         font-size: 17px;
-        font-family: 'heebo-black', sans-serif; }
+        line-height: 26px;
+        font-family: heebo, sans-serif;
+        font-weight: 900; }
 
 /*                               APPLY LINKS                            */
 #apply_now {
   padding: 90px 0;
   background-color: #000;
   color: #fff; }
+  #apply_now h2 {
+    font-size: 67px; }
   #apply_now .apply_links {
     display: -webkit-box;
     display: -moz-box;
@@ -573,17 +604,19 @@ header {
       -moz-flex-basis: 33%;
       -ms-flex-basis: 33%;
       flex-basis: 33%;
-      font-family: 'heebo-black', sans-serif;
       font-size: 37px;
       position: relative;
       margin-bottom: 50px; }
       #apply_now .apply_links a span {
         margin-right: 10px;
-        position: relative; }
+        position: relative;
+        font-family: heebo, sans-serif;
+        font-weight: 900;
+        text-transform: uppercase; }
         #apply_now .apply_links a span:after {
           content: '';
           position: absolute;
-          bottom: 5px;
+          bottom: 0;
           left: 0;
           width: 100%;
           height: 2px;

@@ -8,7 +8,7 @@
   }
 }
 
-@include declare-font('heebo-black', 'heebo/heebo-black');
-@include declare-font('heebo-bold', 'heebo/heebo-bold');
-@include declare-font('heebo-extrabold', 'heebo/heebo-extrabold');
-@include declare-font('heebo', 'heebo/heebo-regular');
+@include declare-font('heebo', 'heebo/heebo-black', 900);
+@include declare-font('heebo', 'heebo/heebo-bold', 700);
+@include declare-font('heebo', 'heebo/heebo-extrabold', 800);
+@include declare-font('heebo', 'heebo/heebo-regular', 400);
