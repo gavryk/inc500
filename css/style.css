@@ -138,17 +138,19 @@ li {
     #banner .row_1380 .main_title h1 {
       font-size: 53px; }
 
-  #banner .state_marks .marks .row_1140 div.mark {
-    margin-bottom: 30px;
-    -webkit-flex-basis: 30%;
-    -moz-flex-basis: 30%;
-    -ms-flex-basis: 30%;
-    flex-basis: 30%; }
-    #banner .state_marks .marks .row_1140 div.mark p {
-      font-size: 16px;
-      margin-bottom: 0; }
-    #banner .state_marks .marks .row_1140 div.mark span {
-      width: 100%; }
+  section#banner {
+    padding-top: 60px; }
+    section#banner .state_marks .marks .row_1140 div.mark {
+      margin-bottom: 30px;
+      -webkit-flex-basis: 30%;
+      -moz-flex-basis: 30%;
+      -ms-flex-basis: 30%;
+      flex-basis: 30%; }
+      section#banner .state_marks .marks .row_1140 div.mark p {
+        font-size: 16px;
+        margin-bottom: 0; }
+      section#banner .state_marks .marks .row_1140 div.mark span {
+        width: 100%; }
 
   #get_recognition .row_1140 .recognition_items .item {
     -webkit-flex-basis: 40%;
