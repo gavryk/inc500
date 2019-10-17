@@ -8,7 +8,8 @@
       }
     }
   }
-  #banner {
+  section#banner {
+    padding-top: 60px;
     .row_1380 {
       .main_title {
         max-width: 100%;
@@ -18,8 +19,7 @@
       }
     }
   }
-  section#banner {
-    padding-top: 60px;
+  #banner {
     .state_marks {
       .marks {
         .row_1140 {
@@ -38,7 +38,8 @@
       }
     }
   }
-  #get_recognition {
+  section#get_recognition {
+    padding-top: 60px;
     .row_1140 {
       .recognition_items {
         .item {
@@ -76,7 +77,7 @@
       }
       .details_link {
         a {
-          padding: 20px 30px;
+          padding: 20px;
           font-size: 30px;
         }
       }
@@ -103,9 +104,10 @@
   #apply_now {
     .row_1380 {
       .apply_links {
+        @include justify-content(space-between);
         a {
           @include justify-content(flex-start);
-          @include flex-basis(45%);
+          @include flex-basis(35%);
           font-size: 30px;
         }
       }
@@ -146,7 +148,8 @@
       }
     }
   }
-  #important_date {
+  section#important_date {
+    padding: 60px 0;
     .row_1280 {
       .dates {
         div.date {
@@ -163,13 +166,37 @@
       div.apply_links {
         a {
           font-size: 27px;
+          @include flex-basis(45%);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  #apply_now {
+    div.row_1380 {
+      h2 {
+        font-size: 54px;
+      }
+      div.apply_links {
+        a {
+          font-size: 27px;
           @include flex-basis(100%);
         }
       }
     }
   }
 }
+
 @media (max-width: 380px) {
+  section#apply_now {
+    padding: 60px 0;
+    .row_1380 {
+      h2 {
+        text-align: left;
+      }
+    }
+  }
   #banner {
     .state_marks {
       .marks {

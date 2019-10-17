@@ -41,17 +41,17 @@ h2 {
   width: 1380px; }
 
 .row_1020 {
-  max-width: 96%;
+  max-width: 90%;
   margin: 0 auto;
   width: 1020px; }
 
 .row_1280 {
-  max-width: 96%;
+  max-width: 90%;
   margin: 0 auto;
   width: 1280px; }
 
 .row_1140 {
-  max-width: 96%;
+  max-width: 94%;
   margin: 0 auto;
   width: 1140px; }
 
@@ -133,36 +133,38 @@ li {
   header .row_1380 .apply_region h4, header .row_1380 .apply_region span {
     font-size: 16px; }
 
-  #banner .row_1380 .main_title {
-    max-width: 100%; }
-    #banner .row_1380 .main_title h1 {
-      font-size: 53px; }
-
   section#banner {
     padding-top: 60px; }
-    section#banner .state_marks .marks .row_1140 div.mark {
-      margin-bottom: 30px;
-      -webkit-flex-basis: 30%;
-      -moz-flex-basis: 30%;
-      -ms-flex-basis: 30%;
-      flex-basis: 30%; }
-      section#banner .state_marks .marks .row_1140 div.mark p {
-        font-size: 16px;
-        margin-bottom: 0; }
-      section#banner .state_marks .marks .row_1140 div.mark span {
-        width: 100%; }
+    section#banner .row_1380 .main_title {
+      max-width: 100%; }
+      section#banner .row_1380 .main_title h1 {
+        font-size: 53px; }
 
-  #get_recognition .row_1140 .recognition_items .item {
-    -webkit-flex-basis: 40%;
-    -moz-flex-basis: 40%;
-    -ms-flex-basis: 40%;
-    flex-basis: 40%;
-    margin-left: 40px; }
-    #get_recognition .row_1140 .recognition_items .item h3 {
-      font-size: 22px; }
-      #get_recognition .row_1140 .recognition_items .item h3:before {
-        top: 4px;
-        font-size: 23px; }
+  #banner .state_marks .marks .row_1140 div.mark {
+    margin-bottom: 30px;
+    -webkit-flex-basis: 30%;
+    -moz-flex-basis: 30%;
+    -ms-flex-basis: 30%;
+    flex-basis: 30%; }
+    #banner .state_marks .marks .row_1140 div.mark p {
+      font-size: 16px;
+      margin-bottom: 0; }
+    #banner .state_marks .marks .row_1140 div.mark span {
+      width: 100%; }
+
+  section#get_recognition {
+    padding-top: 60px; }
+    section#get_recognition .row_1140 .recognition_items .item {
+      -webkit-flex-basis: 40%;
+      -moz-flex-basis: 40%;
+      -ms-flex-basis: 40%;
+      flex-basis: 40%;
+      margin-left: 40px; }
+      section#get_recognition .row_1140 .recognition_items .item h3 {
+        font-size: 22px; }
+        section#get_recognition .row_1140 .recognition_items .item h3:before {
+          top: 4px;
+          font-size: 23px; }
 
   #exclusive_benefits .row_1280 div.wrapper {
     -webkit-flex-basis: 50%;
@@ -181,7 +183,7 @@ li {
   #get_details div.row_1280 .details_title {
     margin-bottom: 20px; }
   #get_details div.row_1280 .details_link a {
-    padding: 20px 30px;
+    padding: 20px;
     font-size: 30px; }
 
   #important_date .row_1280 h2 {
@@ -195,17 +197,23 @@ li {
     #important_date .row_1280 .dates .date h4 {
       margin-bottom: 0; }
 
-  #apply_now .row_1380 .apply_links a {
-    -webkit-justify-content: flex-start;
-    -moz-justify-content: flex-start;
-    -ms-justify-content: flex-start;
-    justify-content: flex-start;
-    -ms-flex-pack: flex-start;
-    -webkit-flex-basis: 45%;
-    -moz-flex-basis: 45%;
-    -ms-flex-basis: 45%;
-    flex-basis: 45%;
-    font-size: 30px; } }
+  #apply_now .row_1380 .apply_links {
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between; }
+    #apply_now .row_1380 .apply_links a {
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      -ms-justify-content: flex-start;
+      justify-content: flex-start;
+      -ms-flex-pack: flex-start;
+      -webkit-flex-basis: 35%;
+      -moz-flex-basis: 35%;
+      -ms-flex-basis: 35%;
+      flex-basis: 35%;
+      font-size: 30px; } }
 @media (max-width: 768px) {
   #banner .state_marks .marks div.row_1140 {
     -webkit-justify-content: center;
@@ -232,21 +240,37 @@ li {
     -ms-flex-basis: 100%;
     flex-basis: 100%; }
 
-  #important_date .row_1280 .dates div.date {
-    -webkit-flex-basis: 100%;
-    -moz-flex-basis: 100%;
-    -ms-flex-basis: 100%;
-    flex-basis: 100%; }
+  section#important_date {
+    padding: 60px 0; }
+    section#important_date .row_1280 .dates div.date {
+      -webkit-flex-basis: 100%;
+      -moz-flex-basis: 100%;
+      -ms-flex-basis: 100%;
+      flex-basis: 100%; }
 
   #apply_now .row_1380 h2 {
     font-size: 54px; }
   #apply_now .row_1380 div.apply_links a {
+    font-size: 27px;
+    -webkit-flex-basis: 45%;
+    -moz-flex-basis: 45%;
+    -ms-flex-basis: 45%;
+    flex-basis: 45%; } }
+@media (max-width: 620px) {
+  #apply_now div.row_1380 h2 {
+    font-size: 54px; }
+  #apply_now div.row_1380 div.apply_links a {
     font-size: 27px;
     -webkit-flex-basis: 100%;
     -moz-flex-basis: 100%;
     -ms-flex-basis: 100%;
     flex-basis: 100%; } }
 @media (max-width: 380px) {
+  section#apply_now {
+    padding: 60px 0; }
+    section#apply_now .row_1380 h2 {
+      text-align: left; }
+
   #banner .state_marks .marks div.row_1140 div.mark a:after {
     left: 35px; } }
 /*                              HEADER                            */
