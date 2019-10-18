@@ -319,9 +319,11 @@ header {
 //--------------------------------------------------------------------------------------
 
 footer {
-  padding: 85px 0 45px 0;
-  text-align: center;
-  span {
-    font-size: 12px;
+  .copyright {
+    padding: 85px 0 45px 0;
+    text-align: center;
+    span {
+      font-size: 12px;
+    }
   }
 }

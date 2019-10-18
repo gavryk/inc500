@@ -36,7 +36,7 @@ h2 {
   text-align: center; }
 
 .row_1380 {
-  max-width: 96%;
+  max-width: 97%;
   margin: 0 auto;
   width: 1380px; }
 
@@ -46,7 +46,7 @@ h2 {
   width: 1020px; }
 
 .row_1280 {
-  max-width: 90%;
+  max-width: 98%;
   margin: 0 auto;
   width: 1280px; }
 
@@ -138,7 +138,9 @@ li {
     section#banner .row_1380 .main_title {
       max-width: 100%; }
       section#banner .row_1380 .main_title h1 {
-        font-size: 53px; }
+        font-size: 53px;
+        line-height: 55px;
+        margin-bottom: 22px; }
 
   #banner .state_marks .marks .row_1140 div.mark {
     margin-bottom: 30px;
@@ -153,7 +155,7 @@ li {
       width: 100%; }
 
   section#get_recognition {
-    padding-top: 60px; }
+    padding: 60px 0; }
     section#get_recognition .row_1140 .recognition_items .item {
       -webkit-flex-basis: 40%;
       -moz-flex-basis: 40%;
@@ -216,11 +218,11 @@ li {
       font-size: 30px; } }
 @media (max-width: 768px) {
   #banner .state_marks .marks div.row_1140 {
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center; }
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-around; }
     #banner .state_marks .marks div.row_1140 div.mark {
       -webkit-flex-basis: 43%;
       -moz-flex-basis: 43%;
@@ -228,17 +230,31 @@ li {
       flex-basis: 43%;
       margin-right: 20px; }
 
+  #get_recognition .row_1140 h2 {
+    margin-bottom: 50px; }
   #get_recognition .row_1140 .recognition_items div.item {
+    margin-bottom: 26px;
     -webkit-flex-basis: 100%;
     -moz-flex-basis: 100%;
     -ms-flex-basis: 100%;
     flex-basis: 100%; }
+    #get_recognition .row_1140 .recognition_items div.item h3 {
+      font-size: 24px;
+      margin-bottom: 5px; }
 
-  #exclusive_benefits div.row_1280 div.wrapper {
-    -webkit-flex-basis: 100%;
-    -moz-flex-basis: 100%;
-    -ms-flex-basis: 100%;
-    flex-basis: 100%; }
+  section#exclusive_benefits {
+    padding: 45px 0; }
+    section#exclusive_benefits div.row_1280 .exclusive_image {
+      margin-bottom: 15px; }
+    section#exclusive_benefits div.row_1280 .exclusive_text h2 {
+      font-size: 39px;
+      line-height: 45px;
+      margin-bottom: 0; }
+    section#exclusive_benefits div.row_1280 div.wrapper {
+      -webkit-flex-basis: 100%;
+      -moz-flex-basis: 100%;
+      -ms-flex-basis: 100%;
+      flex-basis: 100%; }
 
   section#important_date {
     padding: 60px 0; }
@@ -266,13 +282,44 @@ li {
     -ms-flex-basis: 100%;
     flex-basis: 100%; } }
 @media (max-width: 380px) {
+  section#get_details {
+    padding: 45px 10px; }
+    section#get_details .row_1280 div.details_title {
+      margin-bottom: 13px; }
+      section#get_details .row_1280 div.details_title h4 {
+        font-size: 22px;
+        line-height: 30px; }
+    section#get_details .row_1280 div.details_link {
+      margin-bottom: 13px; }
+      section#get_details .row_1280 div.details_link a {
+        font-size: 34px;
+        padding: 20px 14px; }
+
+  section#important_date div.row_1280 {
+    width: 94%; }
+
   section#apply_now {
     padding: 60px 0; }
-    section#apply_now .row_1380 h2 {
-      text-align: left; }
+    section#apply_now div.row_1380 {
+      width: 92%; }
+      section#apply_now div.row_1380 h2 {
+        margin-bottom: 20px;
+        text-align: left; }
+      section#apply_now div.row_1380 div.apply_links a {
+        margin-bottom: 30px; }
 
-  #banner .state_marks .marks div.row_1140 div.mark a:after {
-    left: 35px; } }
+  #banner .state_marks .marks div.row_1140 div.mark {
+    margin-bottom: 5px; }
+    #banner .state_marks .marks div.row_1140 div.mark a img {
+      margin-bottom: 20px; }
+    #banner .state_marks .marks div.row_1140 div.mark a:after {
+      display: none; }
+    #banner .state_marks .marks div.row_1140 div.mark a p {
+      font-size: 18px;
+      text-decoration: underline; }
+
+  footer div.copyright {
+    padding: 30px 0; } }
 /*                              HEADER                            */
 header {
   padding: 30px 0;
@@ -658,10 +705,10 @@ header {
         opacity: 0; }
 
 /*                               FOOTER                             */
-footer {
+footer .copyright {
   padding: 85px 0 45px 0;
   text-align: center; }
-  footer span {
+  footer .copyright span {
     font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

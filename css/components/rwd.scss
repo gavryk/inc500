@@ -15,6 +15,8 @@
         max-width: 100%;
         h1 {
           font-size: 53px;
+          line-height: 55px;
+          margin-bottom: 22px;
         }
       }
     }
@@ -39,7 +41,7 @@
     }
   }
   section#get_recognition {
-    padding-top: 60px;
+    padding: 60px 0;
     .row_1140 {
       .recognition_items {
         .item {
@@ -123,7 +125,7 @@
     .state_marks {
       .marks {
         div.row_1140 {
-          @include justify-content(center);
+          @include justify-content(space-around);
           div.mark {
             @include flex-basis(43%);
             margin-right: 20px;
@@ -134,15 +136,34 @@
   }
   #get_recognition {
     .row_1140 {
+      h2 {
+        margin-bottom: 50px;
+      }
       .recognition_items {
         div.item {
+          margin-bottom: 26px;
           @include flex-basis(100%);
+          h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+          }
         }
       }
     }
   }
-  #exclusive_benefits {
+  section#exclusive_benefits {
+    padding: 45px 0;
     div.row_1280 {
+      .exclusive_image {
+        margin-bottom: 15px;
+      }
+      .exclusive_text {
+        h2 {
+          font-size: 39px;
+          line-height: 45px;
+          margin-bottom: 0;
+        }
+      }
       div.wrapper {
         @include flex-basis(100%);
       }
@@ -189,11 +210,42 @@
 }
 
 @media (max-width: 380px) {
+  section#get_details {
+    padding: 45px 10px;
+    .row_1280 {
+      div.details_title {
+        margin-bottom: 13px;
+        h4 {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+      div.details_link {
+        margin-bottom: 13px;
+        a {
+          font-size: 34px;
+          padding: 20px 14px;
+        }
+      }
+    }
+  }
+  section#important_date {
+    div.row_1280 {
+      width: 94%;
+    }
+  }
   section#apply_now {
     padding: 60px 0;
-    .row_1380 {
+    div.row_1380 {
+      width: 92%;
       h2 {
+        margin-bottom: 20px;
         text-align: left;
+      }
+      div.apply_links {
+        a {
+          margin-bottom: 30px;
+        }
       }
     }
   }
@@ -202,14 +254,27 @@
       .marks {
         div.row_1140 {
           div.mark {
+            margin-bottom: 5px;
             a {
+              img {
+                margin-bottom: 20px;
+              }
               &:after {
-                left: 35px;
+                display: none;
+              }
+              p {
+                font-size: 18px;
+                text-decoration: underline;
               }
             }
           }
         }
       }
+    }
+  }
+  footer {
+    div.copyright {
+      padding: 30px 0 ;
     }
   }
 }
